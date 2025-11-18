@@ -1,6 +1,6 @@
 // <!-- Role Script -->
 
-const roles = ["Data Analyst!", "Data Scientist!", "Researcher!"];
+const roles = ["Data Analyst!", "Data Scientist!", "Researcher!", "Engineer!"];
 let currentIndex = 0;
 const typingText = document.querySelector(".typing-text");
 
@@ -133,4 +133,5 @@ nextBtn.addEventListener('click', () => showSlide(index + 1));
       contactSection.classList.add('show');
     }
   });
+
 
