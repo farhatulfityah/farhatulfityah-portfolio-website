@@ -261,6 +261,33 @@
     <!-- Project 4 -->
     <div class="project-card" data-modal="modal4">
       <img src="images/Project 4.png" alt="project 4">
+        <div class="project-info">
+        <a href="#" class="open-modal">E-commerce Funnel Analysis</a>
+        <p>Funnel Analysis: Diagnosing bottlenecks in checkout stage.</p>
+        <div class="tags">
+          <span data-tag="EDA">EDA</span>
+          <span data-tag="Python">Python</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project-card" data-modal="modal5">
+      <img src="images/Project 5.png" alt="project 5">
+      <div class="project-info">
+        <a href="#" class="open-modal">Finance Loan Portfolio Analysis</a>
+        <p>Monthly loan cohort customer profile comparison for optimization loan portfolio.</p>
+        <div class="tags">
+          <span data-tag="EDA">EDA</span>
+          <span data-tag="SQL">SQL</span>
+          <span data-tag="Python">Python</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Project 6 -->
+    <div class="project-card" data-modal="modal6">
+      <img src="images/Project 6.png" alt="project 6">
       <div class="project-info">
         <a href="#" class="open-modal">Paylater Activation Propensity Model</a>
         <p>Applied logistic regression to predict customer for paylater activation.</p>
@@ -272,9 +299,9 @@
       </div>
     </div>
 
-    <!-- Project 5 -->
-    <div class="project-card" data-modal="modal5">
-      <img src="images/Project 5.png" alt="project 5">
+    <!-- Project 7 -->
+    <div class="project-card" data-modal="modal7">
+      <img src="images/Project 7.png" alt="project 7">
       <div class="project-info">
         <a href="#" class="open-modal">Customer Spending Identification</a>
         <p>Identifying key drivers of customer spending.</p>
@@ -287,9 +314,9 @@
       </div>
     </div>
 
-    <!-- Project 6 -->
-    <div class="project-card" data-modal="modal6">
-      <img src="images/Project 6.png" alt="Project 6">
+    <!-- Project 8 -->
+    <div class="project-card" data-modal="modal8">
+      <img src="images/Project 8.png" alt="Project 8">
       <div class="project-info">
         <a href="#" class="open-modal">Campaign Strategy Analysis</a>
         <p>Analysis twin-date campaign strategy in e-commerce.</p>
@@ -302,24 +329,12 @@
       </div>
     </div>
 
-    <!-- Project 7 -->
-    <div class="project-card" data-modal="modal7">
-      <img src="images/Project 7.png" alt="Project 7">
+    <!-- Project 9 -->
+    <div class="project-card" data-modal="modal9">
+      <img src="images/Project 9.png" alt="Project 9">
       <div class="project-info">
         <a href="#" class="open-modal">Steam Game Dashboard</a>
         <p>Developing game performance dashboard.</p>
-        <div class="tags">
-          <span data-tag="Tableau">Tableau</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 8 -->
-    <div class="project-card" data-modal="modal8">
-      <img src="images/Project 8.png" alt="Project 8">
-      <div class="project-info">
-        <a href="#" class="open-modal">RevoFinance Personal Dashboard</a>
-        <p>Developing personal spending dashboard for RevoFinance.</p>
         <div class="tags">
           <span data-tag="Tableau">Tableau</span>
         </div>
@@ -443,6 +458,74 @@
 <div id="modal4" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal4')">&times;</span>
+      <h3>E-commerceU Funnel Analysis: Diagnosing Bottlenecks in the Checkout Stage</h3>
+      <p><strong>Domain:</strong> E-Commerce</p>
+      <p><strong>Tools:</strong>  Python (Pandas, Numpy, Scikit-Learn), Google Colaboratory</p>
+      <p><strong>Objective:</strong> To diagnose the drivers of a 46.3% revenue decline in Q4 2022 by identifying funnel inefficiencies and defining a realistic improvement target for checkout completion.</p>
+
+      <p><strong>Approach:</strong></p>
+      <ul>
+        <li>Analyzed end-to-end transaction and funnel data to assess conversion efficiency.</li>
+        <li>Conducted funnel and drop-off analysis on 19K+ transactions to identify the primary bottleneck.</li>
+        <li>Performed segmented EDA by payment methods, time patterns, and customer demographics.</li>
+        <li>Evaluated behavioral and technical factors contributing to checkout failures.</li>
+      </ul>
+
+      <p><strong>Key Insights:</strong></p>
+      <ul>
+        <li>Checkout stage is the dominant funnel bottleneck, with a 37.56% abandonment rate at the final purchase step.</li>
+        <li>Revenue decline is driven more by conversion failure than traffic volume.</li>
+        <li>Payment reliability issues and UX friction are the leading contributors to checkout abandonment.</li>
+      </ul>
+
+      <p><strong>Business Recommendations:</strong></p>
+      <ul>
+        <li>Improve payment reliability, prioritizing high-usage payment methods.</li>
+        <li>Reduce checkout UX friction through form simplification and clearer error handling.</li>
+        <li>Set a data-driven target to increase checkout completion rate from 16.87% to 27% within three months.</li>
+      </ul>
+    <a href="https://drive.google.com/file/d/1ODPTIWALHVTjBA4c4VZOuXRpyX3cxr8z/view?usp=drive_link" target="_blank" class="modal-link">View Full Project</a>
+  </div>
+</div>
+
+<!--Project 5-->
+<div id="modal5" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal5')">&times;</span>
+      <h3>RevoFin Loan Portfolio Performance & Risk Overview</h3>
+      <p><strong>Domain:</strong> Financial Services, Credit Risk Analytics</p>
+      <p><strong>Tools:</strong>  SQL (BigQuery), Python (Pandas, Matplotlib), Jupyter Notebook</p>
+      <p><strong>Objective:</strong> To evaluate portfolio-level repayment quality using TKB30, identify cohort-based risk patterns, and define a data-driven recovery target for underperforming periods.</p>
+
+      <p><strong>Approach:</strong></p>
+      <ul>
+        <li>Calculated monthly TKB30 metrics for a $2.8B loan portfolio covering 176K+ customers using SQL.</li>
+        <li>Performed cohort-based segmentation to compare historical repayment behavior across time.</li>
+        <li>Selected representative cohorts (perfect, lowest, and highest recent TKB30) for deeper delinquency analysis.</li>
+        <li>Analyzed 31–120 day delinquency distribution using Python to isolate material risk differences.</li>
+      </ul>
+
+      <p><strong>Key Insights:</strong></p>
+      <ul>
+        <li>Portfolio repayment performance shows high volatility across cohorts, despite similar interest rates and installment structures.</li>
+        <li>The April 2014 cohort exhibited materially higher concentrations of 31–120 day delinquencies, clearly distinguishing it from other cohorts.</li>
+        <li>Low TKB30 periods are driven more by delinquency concentration than by loan pricing factors.</li>
+      </ul>
+
+      <p><strong>Business Recommendations:</strong></p>
+      <ul>
+        <li>Apply cohort-specific monitoring for early detection of rising delinquency risk.</li>
+        <li>Prioritize borrower-level intervention on cohorts with high mid-term delinquency exposure.</li>
+        <li>Establish a recovery benchmark to improve monthly TKB30 from 93.28% toward historically perfect (~100%) levels.</li>
+      </ul>
+    <a href="https://drive.google.com/file/d/18CzzN4kcdAw2Vytyzn8oAMZidIP6HJkH/view?usp=drive_link" target="_blank" class="modal-link">View Full Project</a>
+  </div>
+</div>
+
+<!--Project 6-->
+<div id="modal6" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal6')">&times;</span>
       <h3>Propensity Model for PayLater Activation: RevoBank Pilot Program</h3>
       <p><strong>Domain:</strong> Banking, Predictive Modelling</p>
       <p><strong>Tools:</strong>  Python (Pandas, Numpy, Scikit-Learn), Google Colaboratory</p>
@@ -473,10 +556,10 @@
   </div>
 </div>
 
-<!--Project 5-->
-<div id="modal5" class="modal">
+<!--Project 7-->
+<div id="modal7" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('modal5')">&times;</span>
+    <span class="close" onclick="closeModal('modal7')">&times;</span>
       <h3>Identifying Key Drivers of Customer Spending in TokoBli E-commerce</h3>
       <p><strong>Domain:</strong> E-Commerce, Customer Spending Analysis </p>
       <p><strong>Tools:</strong>  Statistics (XLMiner) and Google Spreadsheets </p>
@@ -507,10 +590,10 @@
   </div>
 </div>
 
-<!--Project 6-->
-<div id="modal6" class="modal">
+<!--Project 8-->
+<div id="modal8" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('modal6')">&times;</span>
+    <span class="close" onclick="closeModal('modal8')">&times;</span>
       <h3>Analysis of TokoBli Twin Dates Campaign: Strategy & Results Evaluation</h3>
       <p><strong>Domain:</strong> E-Commerce, Marketing Campaign Analysis </p>
       <p><strong>Tools:</strong>  Statistics (XLMiner) and Google Spreadsheets </p>
@@ -542,10 +625,10 @@
   </div>
 </div>
 
-<!--Project 7-->
-<div id="modal7" class="modal">
+<!--Project 9-->
+<div id="modal9" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('modal7')">&times;</span>
+    <span class="close" onclick="closeModal('modal9')">&times;</span>
       <h3>Data-Driven Strategic Insights for Steam Game Growth</h3>
       <p><strong>Domain:</strong> Gaming, Business Intelligence & Visualization </p>
       <p><strong>Tools:</strong>  Tableau </p>
@@ -578,40 +661,7 @@
   </div>
 </div>
 
-<!--Project 8-->
-<div id="modal8" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal8')">&times;</span>
-      <h3>RevoFinance: Visualizing Personal Spending and Budget Insights</h3>
-      <p><strong>Domain:</strong> Fintech, Personal Finance Visualization </p>
-      <p><strong>Tools:</strong>  Tableau </p>
-      <p><strong>Objective:</strong> To design an interactive dashboard to help users track personal expenses, monitor budget utilization, and identify spending patterns for better financial planning.</p>
 
-      <p><strong>Approach:</strong></p>
-      <ul>
-        <li>Integrated three datasets: Personal Expenses, Merchant Master, and Annual Budget.</li>
-        <li>Created table relationships in Tableau (logical layer) to maintain level of detail.</li>
-        <li>Built dashboards with metrics: total expense, average transaction, spending distribution, budget vs actual.</li>
-      </ul>
-
-      <p><strong>Key Insights:</strong></p>
-      <ul>
-        <li>Total annual spending reached Rp508M, with budget utilization at 93.7% (under budget).</li>
-        <li>Top 3 categories: Utilities, Dining, and Transport; Education had the lowest share.</li>
-        <li>Overspending occurred in Education, Entertainment, Subscription, and Travel.</li>
-        <li>Spending peaked in December (Rp54M), lowest in October (Rp35M), showing strong year-end seasonality.</li>
-        <li>Offline spending concentrated in Jakarta, especially on utilities, groceries, and dining.</li>
-      </ul>
-
-      <p><strong>Business Recommendations:</strong></p>
-      <ul>
-        <li>Reallocate underutilized budgets to categories with frequent overspending.</li>
-        <li>Promote financial literacy by encouraging more allocation toward productive categories like Education.</li>
-        <li>Plan budget buffers for year-end when spending spikes.</li>
-      </ul>
-    <a href="https://public.tableau.com/views/FSDARevoU-IntermediateAssignment/RevoFinanceUserPersonalSpending?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="modal-link">View Tableau Public</a>
-  </div>
-</div>
 
 <!-- SECTION 6: Recommendations -->
 <section id="recommendations" class="recommendations-section">
@@ -658,7 +708,7 @@
         </div>
       </div>
 
-      <!-- Slide 4 -->
+    <!-- Slide 4 -->
       <div class="recommendation-card">
         <p>“I had the opportunity to see Fityah’s growth and performance during the RevoU Full Stack Data Analytics program in the Madrid Jun 25 batch.
             She consistently impressed me with her clarity of thought, strong business sense, and the way she communicated complex analyses through engaging and well-structured presentations.
@@ -672,8 +722,8 @@
           </div>
         </div>
       </div>
-
-      <!-- Slide 5 -->
+    
+    <!-- Slide 5 -->
       <div class="recommendation-card">
         <p>“I know Tya from the RevoU Data Analytics course, where she quickly stood out for the quality of her work. Despite not having worked as a data analyst before, she brought a strong technical foundation from her master’s in biomedical engineering. She’s an expert in MATLAB and already had solid Python skills, which showed in every assignment.
             Her analyses were consistently incisive, thorough, and technically sound. Just as impressive, her visualizations were clear and compelling, making complex findings easy to grasp. It’s no surprise she earned top marks and was invited to present her work multiple times, more than almost anyone else, in our ~100-student cohort.
